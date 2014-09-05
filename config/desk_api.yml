@@ -1,0 +1,8 @@
+development:
+  uri: 'https://testco.desk.com/api/v2/'
+  username: 'sholton311@gmail.com'
+  password: 'Cat23456#'
+
+test:
+
+production:

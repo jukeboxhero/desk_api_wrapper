@@ -1,9 +1,10 @@
 class Api::V1::CasesController < ApplicationController
 
 	def index
-		response = HTTParty.get('https://testco.desk.com/api/v2/cases',
-								:basic_auth => {:username => 'sholton311@gmail.com', :password => 'Cat23456#'})
-		render :json => response.body
+		@client = DeskClient.new
+		response = @client.cases
+		render :json => response
+		#render Case.parse_json(response['_embedded']['entries'].first.to_json)
 	end
 
 end

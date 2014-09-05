@@ -32,7 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'httparty', '~> 0.13.1'
+gem 'faraday', 		'~> 0.9.0'
+gem 'representable', 	'~> 2.0.4'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
