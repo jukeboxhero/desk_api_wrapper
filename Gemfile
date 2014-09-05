@@ -34,6 +34,7 @@ end
 
 gem 'faraday', 		'~> 0.9.0'
 gem 'representable', 	'~> 2.0.4'
+gem 'oauth',         '~> 0.4.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

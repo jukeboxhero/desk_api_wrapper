@@ -1,0 +1,8 @@
+<h1>Your Cases</h1>
+
+<ul id="cases">
+	<% @cases.each do |_case| %>
+
+		<li class="case-<%= _case.id %>"><%= _case.subject.blank? ?  "(no subject)" : _case.subject %></p>
+	<% end %>
+</ul>
