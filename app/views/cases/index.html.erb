@@ -1,8 +1,10 @@
-<h1>Your Cases</h1>
+<h1>Your Filters</h1>
 
-<ul id="cases">
-	<% @cases.each do |_case| %>
+<ul id="filters">
+	<% @filters.each do |_filter| %>
 
-		<li class="case-<%= _case.id %>"><%= _case.subject.blank? ?  "(no subject)" : _case.subject %></p>
+		<li class="case-<%= _filter.id %>">
+			<%= link_to _filter.name, _filter._links["self"]["href"] %></a>
+		</li>
 	<% end %>
 </ul>

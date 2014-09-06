@@ -8,3 +8,8 @@ development:
 test:
 
 production:
+  uri: 'https://testco.desk.com/api/v2/'
+  key: 'ClkIdMY6N6NuVZoCOQNE'
+  secret: 'lARZ0chnfi2uijcLGAMIDd3E59wutQItHpHYgl74'
+  access_token: 'gYsFdygrDd8EOoM8dzhG'
+  access_secret: '4Bqwjb3I9hhsK7oTItzj5huXT0xtlRT6wYC1ENxO'

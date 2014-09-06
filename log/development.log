@@ -4934,3 +4934,497 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 17:34:17 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 17:34:17 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:02:47 -0500
+Processing by CasesController#index as HTML
+Completed 500 Internal Server Error in 954ms
+
+NoMethodError (undefined method `parse_json' for Filter:Class):
+  app/controllers/cases_controller.rb:7:in `index'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.3ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:03:07 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 962ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:03:08 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:05:05 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (26.4ms)
+Completed 500 Internal Server Error in 1734ms
+
+ActionView::Template::Error (undefined local variable or method `filter' for #<#<Class:0x007fc21c2372e8>:0x007fc221838bb0>):
+    3: <ul id="filters">
+    4: 	<% @cases.each do |_filter| %>
+    5: 
+    6: 		<li class="case-<%= filter.id %>"><%= _filter.subject.blank? ?  "(no subject)" : _filter.subject %></p>
+    7: 	<% end %>
+    8: </ul>
+    9: 
+  app/views/cases/index.html.erb:6:in `block in _app_views_cases_index_html_erb___2050440180391619697_70235881323440'
+  app/views/cases/index.html.erb:4:in `each'
+  app/views/cases/index.html.erb:4:in `_app_views_cases_index_html_erb___2050440180391619697_70235881323440'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:05:14 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1080ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:15 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:05:32 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1218ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:05:34 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:14:28 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 1227ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Your Filters</h1>
+    2: 
+    3: <ul id="filters">
+    4: 	<% @filter.each do |_filter| %>
+    5: 
+    6: 		<li class="case-<%= _filter.id %>"><%= _filter.subject.blank? ?  "(no subject)" : _filter.subject %></p>
+    7: 	<% end %>
+  app/views/cases/index.html.erb:4:in `_app_views_cases_index_html_erb___2050440180391619697_70235856344260'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:14:39 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 919ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Your Filters</h1>
+    2: 
+    3: <ul id="filters">
+    4: 	<% @filters.each do |_filter| %>
+    5: 
+    6: 		<li class="case-<%= _filter.id %>"><%= _filter.subject.blank? ?  "(no subject)" : _filter.subject %></p>
+    7: 	<% end %>
+  app/views/cases/index.html.erb:4:in `_app_views_cases_index_html_erb___2050440180391619697_70235834274000'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:14:54 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1404ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:14:55 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:15:32 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 915ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:33 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:15:49 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 815ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:15:50 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:18:54 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2176ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:18:57 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:23:38 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2092ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:23:40 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:24:57 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2249ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:00 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:25:15 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 1725ms
+
+ActionView::Template::Error (undefined method `self' for #<Hash:0x007fc221822888>):
+     5: 
+     6: 		<li class="case-<%= _filter.id %>">
+     7: 			<a href=""><%= _filter.name %></a>
+     8: 			<%= _filter._links.self %>
+     9: 		</li>
+    10: 	<% end %>
+    11: </ul>
+  app/views/cases/index.html.erb:8:in `block in _app_views_cases_index_html_erb___2050440180391619697_70235881312500'
+  app/views/cases/index.html.erb:4:in `each'
+  app/views/cases/index.html.erb:4:in `_app_views_cases_index_html_erb___2050440180391619697_70235881312500'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:25:35 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1712ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:25:37 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:26:59 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2337ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:01 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-05 18:27:16 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1702ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/cases.css?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 18:27:18 -0500
+
+
+Started GET "/api/v2/filters/2111473" for 127.0.0.1 at 2014-09-05 18:27:19 -0500
+
+ActionController::RoutingError (No route matches [GET] "/api/v2/filters/2111473"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.6ms)
+
+
+Started GET "/api/v2/filters/2111473" for 127.0.0.1 at 2014-09-05 18:27:20 -0500
+
+ActionController::RoutingError (No route matches [GET] "/api/v2/filters/2111473"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/sholton/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.5ms)
