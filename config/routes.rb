@@ -3,6 +3,7 @@ Desk::Application.routes.draw do
 
   resources :filters
   resources :cases
+  resources :labels
 
   namespace :api do
     namespace :v1 do

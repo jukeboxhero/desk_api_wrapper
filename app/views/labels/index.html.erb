@@ -1,0 +1,9 @@
+<h1>Your Labels</h1>
+
+<ul id="labels">
+	<% @labels.each do |label| %>
+		<li class="label-<%= label.id %>">
+			<%= link_to label.name, '' %></a>
+		</li>
+	<% end %>
+</ul>

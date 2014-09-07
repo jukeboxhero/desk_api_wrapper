@@ -38,6 +38,11 @@ class DeskClient
 		render_response(response)
 	end
 
+	def labels
+		response = @http.get(url('labels'))
+		render_response(response)
+	end
+
 	def render_response(response)
 		case response.code.try(:to_i)
 		when 200
