@@ -19,8 +19,13 @@ class DeskClient
 		)
 	end
 
-	def url(endpoint)
-		"#{@uri}#{endpoint}"
+	def url(endpoint, opts={})
+		result = "#{@uri}#{endpoint}"
+		unless opts.blank?
+			parms = opts.to_param
+			result = "#{result}?#{parms}"
+		end
+		result
 	end
 
 	def filters
@@ -28,8 +33,8 @@ class DeskClient
 		render_response(response)
 	end
 
-	def cases
-		response = @http.get(url('cases'))
+	def cases(opts={})
+		response = @http.get(url('cases', opts))
 		render_response(response)
 	end
 

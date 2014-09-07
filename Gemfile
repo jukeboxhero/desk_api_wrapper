@@ -32,7 +32,13 @@ end
 gem 'faraday', 		'~> 0.9.0'
 gem 'representable', 	'~> 2.0.4'
 gem 'oauth',         '~> 0.4.7'
-gem 'pg',			'~> 0.17.1'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg',			'~> 0.17.1'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

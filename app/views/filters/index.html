@@ -1,0 +1,9 @@
+<h1>Your Filters</h1>
+
+<ul id="filters">
+	<% @filters.each do |_filter| %>
+		<li class="filter-<%= _filter.id %>">
+			<%= link_to _filter.name, cases_path(:filter_id => _filter.id) %></a>
+		</li>
+	<% end %>
+</ul>

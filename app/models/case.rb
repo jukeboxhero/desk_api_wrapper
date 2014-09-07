@@ -1,7 +1,6 @@
 class Case < OpenStruct
 
 	def self.parse_json(json)
-		p json
 		json = JSON.parse(json)['_embedded']['entries']
 		result = nil
 
