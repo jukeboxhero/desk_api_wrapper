@@ -28,18 +28,32 @@ class DeskClient
 		result
 	end
 
+	# list
 	def filters
 		@http.get(url('filters'))
 	end
 
+	# list
 	def cases(opts={})
 		@http.get(url('cases', opts))
 	end
 
+	# show
+	def case(id)
+		@http.get(url("cases/#{id}"))
+	end
+
+	# update
+	def update_case(id, opts)
+		@http.put(url("cases/#{id}", opts))
+	end
+
+	# list
 	def labels
 		@http.get(url('labels'))
 	end
 
+	# create
 	def create_label(opts={})
 		@http.post(url('labels', opts))
 	end

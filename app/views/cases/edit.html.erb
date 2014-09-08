@@ -1,0 +1,16 @@
+<h1><%= @case.subject %></h1>
+<p><%= @case.blurb %></p>
+
+<h2>Labels</h2>
+
+<%= form_tag "/cases/#{params[:id]}", :method => :put do %>
+
+
+	<% @labels.each do |label| %>
+		<% checked = @case.labels.include?(label.name) ? true : false %>
+		<%= check_box_tag "labels[]", label.name, checked %>
+		<%= label_tag label.name %>
+	<% end %>
+<%= submit_tag %>
+
+<% end %>
