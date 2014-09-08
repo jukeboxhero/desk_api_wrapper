@@ -29,34 +29,19 @@ class DeskClient
 	end
 
 	def filters
-		response = @http.get(url('filters'))
-		render_response(response)
+		@http.get(url('filters'))
 	end
 
 	def cases(opts={})
-		response = @http.get(url('cases', opts))
-		render_response(response)
+		@http.get(url('cases', opts))
 	end
 
 	def labels
-		response = @http.get(url('labels'))
-		render_response(response)
+		@http.get(url('labels'))
 	end
 
 	def create_label(opts={})
-		response = @http.post(url('labels', opts))
-		render_response(response)
-	end
-
-	def render_response(response)
-		case response.code.try(:to_i)
-		when 200
-			response.body
-		when 401
-			raise "Unauthorized user"
-		else
-			raise "There was an error: #{response.body}"
-		end
+		@http.post(url('labels', opts))
 	end
 
 end
