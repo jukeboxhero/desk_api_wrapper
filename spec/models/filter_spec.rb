@@ -1,0 +1,19 @@
+require "rails_helper"
+
+RSpec.describe Filter, :type => :model do
+  it "should parse json list payload" do
+    payload = '{"total_entries":10,"page":1,"_links":{"self":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"first":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"last":{"href":"/api/v2/filters?page=1&per_page=50","class":"page"},"previous":null,"next":null},"_embedded":{"entries":[{"name":"Inbox","sort_field":"updated_at","sort_direction":"desc","position":1,"active":true,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111473","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111473/cases","class":"case"}}},{"name":"All Cases","sort_field":"updated_at","sort_direction":"desc","position":2,"active":true,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111474","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111474/cases","class":"case"}}},{"name":"My Cases","sort_field":"updated_at","sort_direction":"desc","position":3,"active":true,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111475","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111475/cases","class":"case"}}},{"name":"Unassigned Cases","sort_field":"updated_at","sort_direction":"desc","position":4,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111476","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111476/cases","class":"case"}}},{"name":"My Groups Unresolved Cases","sort_field":"updated_at","sort_direction":"desc","position":5,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111477","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111477/cases","class":"case"}}},{"name":"All Unresolved Cases","sort_field":"updated_at","sort_direction":"desc","position":6,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111478","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111478/cases","class":"case"}}},{"name":"Recently Updated Cases","sort_field":"updated_at","sort_direction":"desc","position":7,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111479","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111479/cases","class":"case"}}},{"name":"Aging Pending Cases (>3 Days)","sort_field":"priority","sort_direction":"desc","position":8,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111480","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111480/cases","class":"case"}}},{"name":"Outbox","sort_field":"updated_at","sort_direction":"desc","position":13,"active":true,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111481","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111481/cases","class":"case"}}},{"name":"Deleted Cases","sort_field":"updated_at","sort_direction":"asc","position":14,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111482","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111482/cases","class":"case"}}}]}}'
+
+    result = Filter.parse_json(payload)
+    expect(result.class).to eq(Array)
+    expect(result.size).to eq(10)
+    expect(result.first.class).to eq(Filter)
+  end
+
+  it "should parse single entry json payload" do
+  	payload = '{"name":"Unassigned Cases","sort_field":"updated_at","sort_direction":"desc","position":4,"active":false,"routing_enabled":false,"_links":{"self":{"href":"/api/v2/filters/2111476","class":"filter"},"group":null,"user":null,"cases":{"href":"/api/v2/filters/2111476/cases","class":"case"}}}'
+
+  	result = Label.parse_json(payload)
+    expect(result.class).to eq(Label)
+  end
+end

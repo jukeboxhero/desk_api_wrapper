@@ -35,7 +35,9 @@ gem 'oauth',         '~> 0.4.7'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0.0'
 end
+
 group :production do
   gem 'pg',			'~> 0.17.1'
   gem 'rails_serve_static_assets'
