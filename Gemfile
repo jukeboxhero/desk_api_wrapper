@@ -38,6 +38,8 @@ group :development, :test do
 end
 group :production do
   gem 'pg',			'~> 0.17.1'
+  gem 'rails_serve_static_assets'
+  gem 'rails_stdout_logging'
 end
 
 # Use ActiveModel has_secure_password
