@@ -1,17 +1,19 @@
-<h1>Your Cases</h1>
+<div class="cases">
+	<h1>Your Cases</h1>
 
-<ul id="cases">
-	<% @cases.each do |_case| %>
-
-		<li class="case-<%= _case.id %>">
-			<%= link_to _case.subject, edit_case_path(_case.id) %></a>
-			<% if _case.labels %>
-				<ul class="labels">
-					<% _case.labels.each do |label| %>
-						<li class="label"><%= label %></li>
-					<% end %>
-				</ul>
-			<% end %>
-		</li>
-	<% end %>
-</ul>
+	<ul id="cases" class="list-group">
+		<% @cases.each do |_case| %>
+			<% subject = _case.subject.blank? ? "(no subject)" : _case.subject %>
+			<li class="case-<%= _case.id %> list-group-item">
+				<%= link_to subject, edit_case_path(_case.id) %></a>
+				<% if _case.labels %>
+					<ul class="labels">
+						<% _case.labels.each do |label| %>
+							<li class="label label-default"><%= label %></li>
+						<% end %>
+					</ul>
+				<% end %>
+			</li>
+		<% end %>
+	</ul>
+</div>

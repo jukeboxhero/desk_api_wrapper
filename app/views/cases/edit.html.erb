@@ -1,16 +1,21 @@
-<h1><%= @case.subject %></h1>
-<p><%= @case.blurb %></p>
+<div class="well">
+	<h2><%= @case.subject %></h2>
+	<p class="blurb"><%= @case.blurb %></p>
 
-<h2>Labels</h2>
+	<h2>Labels</h2>
 
-<%= form_tag "/cases/#{params[:id]}", :method => :put do %>
-
-
-	<% @labels.each do |label| %>
-		<% checked = @case.labels.include?(label.name) ? true : false %>
-		<%= check_box_tag "labels[]", label.name, checked %>
-		<%= label_tag label.name %>
+	<%= form_tag "/cases/#{params[:id]}", :method => :put do %>
+		<div class="inner">
+			<% @labels.each do |label| %>
+				<div class="col-sm-4 case-label">
+					<% checked = @case.labels.include?(label.name) ? true : false %>
+					<%= check_box_tag "labels[]", label.name, checked %>
+					<%= label_tag label.name %>
+				</div>
+			<% end %>
+		</div>
+		<div class="submit">
+			<%= submit_tag "Save Changes", :class => 'btn btn-primary' %>
+		</div>
 	<% end %>
-<%= submit_tag %>
-
-<% end %>
+</div>

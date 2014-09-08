@@ -1,5 +1,5 @@
 Desk::Application.routes.draw do
-  root 'cases#index'
+  root 'dashboard#index'
 
   resources :filters
   resources :cases
