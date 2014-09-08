@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ */
+/* line 15, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #333333 !important;
+  padding-top: 50px;
+}
+
+/* line 20, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+h1 {
+  color: #ccc !important;
+}
+
+/* line 24, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.container {
+  color: #ddd;
+}
+
+/* line 28, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.inner-container {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* line 33, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.list-group {
+  padding-top: 30px !important;
+  width: 900px;
+  margin: 0 auto !important;
+}
+
+/* line 39, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+ul#cases ul {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+/* line 44, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.well h2 {
+  color: #555;
+}
+
+/* line 47, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.well {
+  color: #777;
+}
+
+/* line 50, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.blurb {
+  padding: 0 40px;
+}
+
+/* line 54, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.inner {
+  display: inline-block;
+}
+
+/* line 59, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.case-label {
+  text-align: left;
+}
+
+/* line 63, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.submit {
+  text-align: right;
+}
+
+/* line 67, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+#labels {
+  color: #555;
+}
+
+/* line 71, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.form-group {
+  clear: both;
+  text-align: left;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 79, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.form-group input {
+  width: 100%;
+}
+
+/* line 83, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.description {
+  padding: 0 14px;
+}
+
+/* line 86, /Users/sholton/src/desk/app/assets/stylesheets/application.css.scss */
+.description textarea {
+  min-height: 200px;
+  width: 100%;
+}
