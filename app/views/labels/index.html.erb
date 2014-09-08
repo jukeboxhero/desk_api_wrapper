@@ -1,11 +1,13 @@
-<h1>Your Labels</h1>
+<div class="labels">
+	<h1>Your Labels</h1>
 
-<ul id="labels">
-	<% @labels.each do |label| %>
-		<li class="label-<%= label.id %>">
-			<%= label.name %>
-		</li>
-	<% end %>
-</ul>
+	<%= link_to "Create New Label", new_label_path, :class => 'btn btn-info' %>
 
-<%= link_to "Create New Label", new_label_path %>
+	<ul id="labels" class="list-group">
+		<% @labels.each do |label| %>
+			<li class="label-<%= label.id %> list-group-item">
+				<%= label.name %>
+			</li>
+		<% end %>
+	</ul>
+</div>

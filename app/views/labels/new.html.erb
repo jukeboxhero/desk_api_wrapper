@@ -1,34 +1,68 @@
-<h1>New Label</h1>
+<div class="well">
+	<h2>New Label</h2>
 
-<%= form_tag :labels do %>
-	<%= label_tag :name %>
-	<%= text_field_tag :name %>
+	<%= form_tag :labels do %>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<%= label_tag :name %>
+			</div>
+			<div class="col-sm-6">
+				<%= text_field_tag :name %>
+			</div>
+		</div>
 
-	<%= label_tag :description %>
-	<%= text_area_tag :description %>
+		<div class="form-group">
+			<div class="description">
+				<%= label_tag :description %>
+				<%= text_area_tag :description %>
+			</div>
+		</div>
 
-	<%= label_tag :types %>
-	<%= select_tag :types, options_for_select({"Case" => :case, "Macro" => :macro, "Article" => :article}) %>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<%= label_tag :types %>
+			</div>
+			<div class="col-sm-6">
+				<%= select_tag :types, options_for_select({"Case" => :case, "Macro" => :macro, "Article" => :article}) %>
+			</div>
+		</div>
 
-	<%= label_tag :enabled %>
-	<%= select_tag :enabled, options_for_select({"Enabled" => true, "Disabled" => false}) %>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<%= label_tag :enabled %>
+			</div>
 
-	<%= label_tag :color %>
-	<%= select_tag :color, options_for_select({
-		"Default" 	=> :default,
-		"Blue" 		=> :blue,
-		"White" 	=> :white,
-		"Yellow" 	=> :yellow,
-		"Red"		=> :red,
-		"Orange" 	=> :orange,
-		"Green" 	=> :green,
-		"Black" 	=> :black,
-		"Purple" 	=> :purple,
-		"Brown" 	=> :brown,
-		"Grey" 		=> :grey,
-		"Pink" 		=> :pink
-	}) %>
+			<div class="col-sm-6">
+				<%= select_tag :enabled, options_for_select({"Enabled" => true, "Disabled" => false}) %>
+			</div>
+		</div>
 
-	<%= submit_tag %>
+		<div class="form-group">
+			<div class="col-sm-6">
+				<%= label_tag :color %>
+			</div>
 
-<% end %>
+			<div class="col-sm-6">
+				<%= select_tag :color, options_for_select({
+					"Default" 	=> :default,
+					"Blue" 		=> :blue,
+					"White" 	=> :white,
+					"Yellow" 	=> :yellow,
+					"Red"		=> :red,
+					"Orange" 	=> :orange,
+					"Green" 	=> :green,
+					"Black" 	=> :black,
+					"Purple" 	=> :purple,
+					"Brown" 	=> :brown,
+					"Grey" 		=> :grey,
+					"Pink" 		=> :pink
+				}) %>
+			</div>
+		</div>
+
+		<div class="submit">
+			<%= submit_tag "Save Changes", :class => 'btn btn-primary' %>
+		</div>
+
+	<% end %>
+</div>

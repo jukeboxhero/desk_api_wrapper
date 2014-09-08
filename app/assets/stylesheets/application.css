@@ -31,9 +31,9 @@ h1{
 }
 
 .list-group{
-	padding-top:30px;
+	padding-top:30px !important;
 	width:900px;
-	margin:0 auto;
+	margin:0 auto !important;
 }
 
 .list-group-item{
@@ -66,4 +66,28 @@ ul#cases ul{
 
 .submit{
 	text-align: right;
+}
+
+#labels{
+	color:#555;
+}
+
+.form-group{
+	clear:both;
+	text-align: left;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.form-group input{
+	width:100%;
+}
+
+.description{
+	padding:0 14px;
+}
+.description textarea{
+	min-height: 200px;
+	width:100%;
 }
