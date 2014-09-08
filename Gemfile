@@ -29,7 +29,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'faraday', 		'~> 0.9.0'
 gem 'representable', 	'~> 2.0.4'
 gem 'oauth',         '~> 0.4.7'
 
