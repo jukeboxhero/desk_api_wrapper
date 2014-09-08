@@ -43,6 +43,11 @@ class DeskClient
 		render_response(response)
 	end
 
+	def create_label(opts={})
+		response = @http.post(url('labels', opts))
+		render_response(response)
+	end
+
 	def render_response(response)
 		case response.code.try(:to_i)
 		when 200

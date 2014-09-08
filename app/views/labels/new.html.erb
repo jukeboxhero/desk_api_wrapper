@@ -1,0 +1,34 @@
+<h1>New Label</h1>
+
+<%= form_tag :labels do %>
+	<%= label_tag :name %>
+	<%= text_field_tag :name %>
+
+	<%= label_tag :description %>
+	<%= text_area_tag :description %>
+
+	<%= label_tag :types %>
+	<%= select_tag :types, options_for_select({"Case" => :case, "Macro" => :macro, "Article" => :article}) %>
+
+	<%= label_tag :enabled %>
+	<%= select_tag :enabled, options_for_select({"Enabled" => true, "Disabled" => false}) %>
+
+	<%= label_tag :color %>
+	<%= select_tag :color, options_for_select({
+		"Default" 	=> :default,
+		"Blue" 		=> :blue,
+		"White" 	=> :white,
+		"Yellow" 	=> :yellow,
+		"Red"		=> :red,
+		"Orange" 	=> :orange,
+		"Green" 	=> :green,
+		"Black" 	=> :black,
+		"Purple" 	=> :purple,
+		"Brown" 	=> :brown,
+		"Grey" 		=> :grey,
+		"Pink" 		=> :pink
+	}) %>
+
+	<%= submit_tag %>
+
+<% end %>

@@ -3,7 +3,9 @@
 <ul id="labels">
 	<% @labels.each do |label| %>
 		<li class="label-<%= label.id %>">
-			<%= link_to label.name, '' %></a>
+			<%= label.name %>
 		</li>
 	<% end %>
 </ul>
+
+<%= link_to "Create New Label", new_label_path %>
