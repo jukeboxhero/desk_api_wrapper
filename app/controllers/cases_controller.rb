@@ -4,6 +4,9 @@ class CasesController < ApplicationController
 		opts = {:filter_id => params[:filter_id]} if params[:filter_id]
 		response = DESK_CLIENT.cases(opts)
 		@cases   = Case.parse_json(response.body)
+
+		response = DESK_CLIENT.filters
+		@filters = Filter.parse_json(response.body)
 	end
 
 	def edit

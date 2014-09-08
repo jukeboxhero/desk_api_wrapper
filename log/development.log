@@ -24609,3 +24609,535 @@ Started GET "/cases" for 127.0.0.1 at 2014-09-08 01:57:53 -0500
 Processing by CasesController#index as HTML
   Rendered cases/index.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 1258ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-08 12:56:15 -0500
+Processing by DashboardController#index as HTML
+  Rendered dashboard/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 64ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 12:56:16 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-08 12:56:18 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 970ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-08 12:58:22 -0500
+Processing by CasesController#index as HTML
+Completed 500 Internal Server Error in 1243ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  lib/desk_client.rb:32:in `filters'
+  app/controllers/cases_controller.rb:8:in `index'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-08 12:58:44 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1717ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 12:58:46 -0500
+
+
+Started GET "/cases" for 127.0.0.1 at 2014-09-08 13:00:26 -0500
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2273ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:00:28 -0500
+
+
+Started GET "/cases?filter_id=2111475" for 127.0.0.1 at 2014-09-08 13:01:36 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111475"}
+  Rendered cases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1824ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:01:40 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1733ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:03:04 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2175ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:03:06 -0500
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:04:35 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 2109ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:04:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:05:29 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:05:29 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:05:29 -0500
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:06:21 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 2120ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:24 -0500
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:06:33 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1700ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:06:35 -0500
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:08:22 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2213ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:08:24 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:08:26 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1569ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:09:18 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1628ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:09:20 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:09:51 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 2038ms
+
+ActionView::Template::Error (undefined local variable or method `_filter' for #<#<Class:0x007f89115ca7f0>:0x007f8917b53068>):
+    2: 	<h1>Your Cases</h1>
+    3: 
+    4: 	<ul id="filters" class="nav nav-pills">
+    5: 		<% active = params[:filter_id] == _filter.id ? "active" : '' %>
+    6: 		<% @filters.each do |_filter| %>
+    7: 			<li class="filter-<%= _filter.id %> <%= active %>">
+    8: 				<%= link_to _filter.name, cases_path(:filter_id => _filter.id) %></a>
+  app/views/cases/index.html.erb:5:in `_app_views_cases_index_html_erb___2406072352960976832_70113394545860'
+
+
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/sholton/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:10:10 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1735ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:12 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:10:42 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1653ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:10:44 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:11:04 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1720ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:05 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:11:16 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1995ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:18 -0500
+
+
+Started GET "/cases?filter_id=2111476" for 127.0.0.1 at 2014-09-08 13:11:32 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111476"}
+  Rendered cases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1740ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/cases.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-08 13:11:34 -0500
+
+
+Started GET "/cases?filter_id=2111478" for 127.0.0.1 at 2014-09-08 13:11:38 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111478"}
+  Rendered cases/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1876ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111482" for 127.0.0.1 at 2014-09-08 13:11:44 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111482"}
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1736ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111480" for 127.0.0.1 at 2014-09-08 13:11:47 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111480"}
+  Rendered cases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1536ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases?filter_id=2111477" for 127.0.0.1 at 2014-09-08 13:11:50 -0500
+Processing by CasesController#index as HTML
+  Parameters: {"filter_id"=>"2111477"}
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1644ms (Views: 5.5ms | ActiveRecord: 0.0ms)

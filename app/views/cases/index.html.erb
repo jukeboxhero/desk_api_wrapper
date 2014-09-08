@@ -1,6 +1,16 @@
 <div class="cases">
 	<h1>Your Cases</h1>
 
+	<ul id="filters" class="nav nav-pills">
+
+		<% @filters.each do |_filter| %>
+			<% active = params[:filter_id].try(:to_i) == _filter.id ? "active" : '' %>
+			<li class="filter-<%= _filter.id %> <%= active %>">
+				<%= link_to _filter.name, cases_path(:filter_id => _filter.id) %></a>
+			</li>
+		<% end %>
+	</ul>
+
 	<ul id="cases" class="list-group">
 		<% @cases.each do |_case| %>
 			<% subject = _case.subject.blank? ? "(no subject)" : _case.subject %>

@@ -2,7 +2,8 @@
 
 <ul id="filters">
 	<% @filters.each do |_filter| %>
-		<li class="filter-<%= _filter.id %>">
+		<% active = params[:filter_id] == _filter.id ? "active" : '' %>
+		<li class="filter-<%= _filter.id %> <%= active %>">
 			<%= link_to _filter.name, cases_path(:filter_id => _filter.id) %></a>
 		</li>
 	<% end %>
